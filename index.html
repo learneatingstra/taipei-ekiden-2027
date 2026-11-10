@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#171916">
+<meta name="description" content="第一回台北驛傳｜2027.01.02｜台視至貓空，五棒接力、一起跑向更高的風景。">
+<title>台北驛傳 TAIPEI EKIDEN 2027</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700;900&family=Oswald:wght@400;500;600;700&display=swap');
+:root{--ink:#171916;--paper:#f2eee4;--paper2:#e7e0d2;--red:#a9342c;--muted:#77766e;--line:rgba(23,25,22,.18);--serif:"Noto Serif TC",serif;--sans:Arial,"Noto Sans TC",sans-serif;--display:"Oswald",Impact,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans)}a{color:inherit;text-decoration:none}button,input,textarea,select{font:inherit}.topbar{position:sticky;top:0;z-index:20;background:rgba(23,25,22,.96);color:#f7f2e8;display:flex;align-items:center;justify-content:space-between;padding:0 5vw;min-height:68px;border-bottom:1px solid rgba(255,255,255,.12)}.brand{font:600 17px var(--display);letter-spacing:.16em}.brand small{display:block;font:10px var(--sans);letter-spacing:.24em;color:#c9c2b4;margin-top:2px}.nav{display:flex;gap:26px;font-size:12px;letter-spacing:.12em}.nav a{opacity:.8;transition:.2s}.nav a:hover{opacity:1;color:#d77b6f}.menu{display:none;background:none;border:0;color:#fff;font-size:24px}
+.hero{position:relative;min-height:660px;height:min(88vh,850px);background:#222;overflow:hidden;color:#fff;display:flex;align-items:flex-end}.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,13,13,.55),rgba(10,13,13,.08) 65%),linear-gradient(0deg,rgba(10,13,13,.72),transparent 60%),url("assets/poster.png") center 38%/cover no-repeat;filter:saturate(.82)}.hero-inner{position:relative;width:min(1180px,90%);margin:0 auto;padding:0 0 72px}.eyebrow{font:500 12px var(--display);letter-spacing:.32em;color:#e7c9b9}.hero h1{font:900 clamp(62px,12vw,150px)/.98 var(--serif);letter-spacing:.04em;margin:16px 0 4px;text-shadow:0 4px 30px #0007}.hero-en{font:500 clamp(18px,3vw,28px) var(--display);letter-spacing:.34em}.hero-rule{width:190px;height:5px;background:var(--red);transform:rotate(-5deg);margin:26px 0}.hero-copy{font:500 clamp(16px,2vw,21px)/1.9 var(--serif);letter-spacing:.12em}.hero-meta{display:flex;gap:26px;flex-wrap:wrap;margin-top:28px;font:500 12px var(--display);letter-spacing:.2em}.hero-meta span{border-left:2px solid var(--red);padding-left:10px}.scroll{position:absolute;right:5vw;bottom:34px;font:11px var(--display);letter-spacing:.25em;writing-mode:vertical-rl;color:#eee}
+.section{padding:100px 5vw}.wrap{width:min(1120px,100%);margin:auto}.section-kicker{font:600 12px var(--display);letter-spacing:.28em;color:var(--red);text-transform:uppercase}.section-title{font:800 clamp(34px,5vw,58px)/1.25 var(--serif);margin:12px 0 20px;letter-spacing:.04em}.lead{font:400 16px/2 var(--serif);color:#55564f;max-width:720px}.about-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:7vw;align-items:center}.quote{border-left:4px solid var(--red);padding:8px 0 8px 24px;font:600 24px/1.8 var(--serif);margin-top:34px}.stats{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:34px}.stat{padding:22px 14px 22px 0}.stat strong{display:block;font:600 38px var(--display)}.stat span{font-size:11px;letter-spacing:.16em;color:var(--muted)}
+.dark{background:var(--ink);color:var(--paper)}.dark .lead{color:#c2c0b6}.dark .section-kicker{color:#d77b6f}.stages{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:#55564f;margin-top:44px;border:1px solid #55564f}.stage{background:#20231f;padding:24px 18px;min-height:190px;position:relative}.stage-no{font:500 13px var(--display);letter-spacing:.2em;color:#d77b6f}.stage h3{font:600 19px var(--serif);margin:18px 0 8px}.stage p{font-size:12px;color:#c5c1b6;line-height:1.8;margin:0}.distance{font:600 26px var(--display);margin-top:18px}.map-frame{margin-top:44px;background:#ddd8cc;padding:10px;box-shadow:0 14px 40px #0002}.map-frame img{display:block;width:100%;height:auto}.map-caption{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;color:#bdb8ac;font-size:11px;margin-top:14px}
+.register-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:7vw;align-items:start}.form-card,.list-card{background:#fbf9f3;border:1px solid var(--line);padding:clamp(22px,4vw,38px);box-shadow:0 12px 35px #211d1410}.form-card h3,.list-card h3{font:700 24px var(--serif);margin:0 0 8px}.sub{font-size:12px;color:var(--muted);line-height:1.8;margin:0 0 26px}.field{margin:17px 0}.field label{display:block;font-size:12px;font-weight:700;letter-spacing:.08em;margin-bottom:8px}.field input,.field textarea,.field select{width:100%;border:1px solid #cbc5b8;background:#fffdf8;padding:13px 14px;border-radius:0;outline:none;color:var(--ink)}.field input:focus,.field textarea:focus{border-color:var(--red);box-shadow:0 0 0 2px #a9342c18}.field textarea{min-height:90px;resize:vertical}.required{color:var(--red)}.btn{border:0;background:var(--ink);color:#fff;padding:15px 22px;font:600 12px var(--display);letter-spacing:.2em;cursor:pointer;transition:.2s}.btn:hover{background:var(--red)}.btn.red{background:var(--red)}.btn.outline{background:transparent;border:1px solid var(--ink);color:var(--ink)}.btn.outline:hover{background:var(--ink);color:white}.form-note{font-size:11px;color:var(--muted);line-height:1.8;margin-top:14px}.success{display:none;background:#e5eddf;color:#29402b;padding:13px 15px;margin-top:15px;font-size:13px;line-height:1.7}.entries-head{display:flex;justify-content:space-between;align-items:flex-start;gap:15px;border-bottom:1px solid var(--line);padding-bottom:18px;margin-bottom:20px}.empty{padding:35px 10px;text-align:center;color:var(--muted);font:400 14px/2 var(--serif)}.runner-list{list-style:none;margin:0;padding:0}.runner-list li{display:flex;justify-content:space-between;gap:12px;padding:13px 0;border-bottom:1px solid var(--line);font-size:14px}.runner-list small{color:var(--muted);font-size:11px}.pill{font-size:10px;letter-spacing:.08em;color:#8a332b;border:1px solid #cda29b;padding:4px 7px;white-space:nowrap}
+.team-wrap{margin-top:30px}.team-card{border:1px solid var(--line);padding:18px;margin-top:12px;background:#f5f1e8}.team-top{display:flex;justify-content:space-between;gap:12px;align-items:center}.team-name{font:700 18px var(--serif)}.team-members{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-top:16px}.member{border-top:2px solid var(--red);padding-top:8px}.member b{font:500 11px var(--display);color:var(--red);letter-spacing:.12em}.member span{display:block;font-size:12px;margin-top:5px;overflow-wrap:anywhere}
+.admin{margin-top:32px;border-top:1px dashed #b9b2a5;padding-top:20px}.admin summary{cursor:pointer;font-size:12px;font-weight:700;letter-spacing:.1em}.admin-panel{padding-top:20px}.admin-panel select,.admin-panel input{border:1px solid #cbc5b8;background:white;padding:10px;width:100%;margin:6px 0}.admin-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px}.selected-list{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:12px 0}.checkrow{font-size:12px;display:flex;align-items:center;gap:8px;background:#fff;padding:8px;border:1px solid #ddd7ca}.checkrow input{width:auto;margin:0}
+.faq{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:35px}.faq details{border-top:1px solid var(--line);padding:18px 0}.faq summary{font:600 16px var(--serif);cursor:pointer}.faq p{font-size:13px;color:var(--muted);line-height:1.9}.footer{background:#111410;color:#d5d0c4;padding:55px 5vw;text-align:center}.footer-logo{font:600 28px var(--display);letter-spacing:.22em}.footer p{font:12px/2 var(--serif);color:#aaa69b}.footer small{font:10px var(--display);letter-spacing:.25em;color:#777}
+.toast{position:fixed;left:50%;bottom:25px;transform:translate(-50%,20px);background:#171916;color:#fff;padding:13px 20px;font-size:13px;opacity:0;pointer-events:none;transition:.25s;z-index:50}.toast.show{opacity:1;transform:translate(-50%,0)}
+@media(max-width:800px){.nav{display:none;position:absolute;top:68px;left:0;right:0;background:#171916;padding:20px 5vw 25px;flex-direction:column;gap:18px}.nav.open{display:flex}.menu{display:block}.hero{min-height:620px;height:78vh}.hero:before{background-position:42% center}.about-grid,.register-grid{grid-template-columns:1fr}.stages{grid-template-columns:1fr 1fr}.stage:last-child{grid-column:span 2}.section{padding:75px 6vw}.team-members{grid-template-columns:repeat(2,1fr)}.faq{grid-template-columns:1fr}.stats{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:460px){.hero h1{font-size:58px}.hero-inner{padding-bottom:65px}.stages{grid-template-columns:1fr}.stage:last-child{grid-column:auto}.stage{min-height:140px}.stats strong{font-size:30px}.stats span{font-size:9px}.team-members{grid-template-columns:1fr 1fr}.admin-actions{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#home">TAIPEI EKIDEN<small>THE FIRST EDITION · 2027</small></a>
+  <button class="menu" id="menuBtn" aria-label="開啟選單">☰</button>
+  <nav class="nav" id="nav">
+    <a href="#about">ABOUT</a><a href="#route">ROUTE</a><a href="#register">REGISTER</a><a href="#entries">ENTRY LIST</a><a href="#faq">INFO</a>
+  </nav>
+</header>
+<main>
+<section class="hero" id="home">
+  <div class="hero-inner">
+    <div class="eyebrow">THE FIRST EDITION · 2027.01.02</div>
+    <h1>台北驛傳</h1>
+    <div class="hero-en">TAIPEI EKIDEN</div>
+    <div class="hero-rule"></div>
+    <div class="hero-copy">有些路，一個人可以跑得很快；<br>但有些風景，值得我們一起抵達。</div>
+    <div class="hero-meta"><span>2027.01.02 SAT.</span><span>23.8 KM</span><span>5 STAGES</span><span>台視 → 貓空</span></div>
+  </div>
+  <div class="scroll">SCROLL TO EXPLORE ↓</div>
+</section>
+
+<section class="section" id="about">
+ <div class="wrap about-grid">
+  <div>
+   <div class="section-kicker">01 / ABOUT THE EKIDEN</div>
+   <h2 class="section-title">不是一個人的速度，<br>而是一群人的方向。</h2>
+   <p class="lead">從城市的心臟出發，沿著熟悉的街道與河岸，一棒接著一棒，跑向貓空山上的風景。第一回台北驛傳，邀請你和夥伴一起完成這段旅程。</p>
+   <div class="quote">同一條路，不同的步伐。<br>一起跑向更高的地方。</div>
+  </div>
+  <div>
+   <div class="section-kicker">RACE DATA</div>
+   <div class="stats">
+    <div class="stat"><strong>23.8</strong><span>KM TOTAL</span></div>
+    <div class="stat"><strong>05</strong><span>STAGES</span></div>
+    <div class="stat"><strong>05</strong><span>RUNNERS / TEAM</span></div>
+   </div>
+   <p class="lead" style="margin-top:28px">活動日期｜2027 年 1 月 2 日<br>起點｜台視<br>終點｜貓空<br>形式｜五棒接力，每隊五人</p>
+  </div>
+ </div>
+</section>
+
+<section class="section dark" id="route">
+ <div class="wrap">
+  <div class="section-kicker">02 / THE ROUTE</div>
+  <h2 class="section-title">五棒接力・一條往山的路</h2>
+  <p class="lead">從城市街廓、河岸一路向南，最後爬升至貓空。以下路段依目前規劃示意，實際交接點與路線以主辦單位公告為準。</p>
+  <div class="stages">
+   <article class="stage"><div class="stage-no">STAGE 01</div><h3>台視 → 福和橋</h3><p>城市出發，沿著街道向河岸前進。</p><div class="distance">6.0 <small>KM</small></div></article>
+   <article class="stage"><div class="stage-no">STAGE 02</div><h3>福和橋 → 小碧潭</h3><p>穿越河岸與城市綠廊。</p><div class="distance">5.0 <small>KM</small></div></article>
+   <article class="stage"><div class="stage-no">STAGE 03</div><h3>小碧潭 → 再興</h3><p>持續向南，接近山城地帶。</p><div class="distance">5.0 <small>KM</small></div></article>
+   <article class="stage"><div class="stage-no">STAGE 04</div><h3>再興 → 政大渡賢橋</h3><p>路線逐漸轉入山側。</p><div class="distance">3.3 <small>KM</small></div></article>
+   <article class="stage"><div class="stage-no">STAGE 05</div><h3>政大 → 貓空站</h3><p>最後一棒，向山上的終點前進。</p><div class="distance">4.5 <small>KM</small></div></article>
+  </div>
+  <div class="map-frame"><img src="assets/route-map.png" alt="台視至貓空五段接力路線規劃地圖"></div>
+  <div class="map-caption"><span>ROUTE MAP · TAIPEI TO MAOKONG</span><span>總距離約 23.8 KM · 五棒接力</span></div>
+ </div>
+</section>
+
+<section class="section" id="register">
+ <div class="wrap">
+  <div class="section-kicker">03 / JOIN THE RACE</div>
+  <h2 class="section-title">加入這段故事。</h2>
+  <p class="lead">先完成個人報名，主辦單位將於報名後統一分隊，每隊五位選手。報名沒有截止日期，歡迎加入。</p>
+  <div class="register-grid" style="margin-top:38px">
+   <div>
+    <h3 style="font:700 24px var(--serif)">一個人報名，<br>五個人一起抵達。</h3>
+    <p class="lead" style="font-size:14px">不需要先找好隊友，也不用選擇棒次。留下你的資料，剩下的交給主辦單位安排。</p>
+    <div class="quote" style="font-size:18px">跑得快很棒，<br>一起跑到終點更棒。</div>
+   </div>
+   <form class="form-card" id="signupForm">
+    <h3>個人報名表</h3><p class="sub">PERSONAL REGISTRATION · 欄位標示 * 為必填</p>
+    <div class="field"><label for="name">姓名 <span class="required">*</span></label><input id="name" name="name" required maxlength="30" placeholder="請輸入真實姓名"></div>
+    <div class="field"><label for="nickname">暱稱</label><input id="nickname" name="nickname" maxlength="30" placeholder="希望大家怎麼稱呼你？（選填）"></div>
+    <div class="field"><label for="contact">聯絡方式 <span class="required">*</span></label><input id="contact" name="contact" required maxlength="100" placeholder="Email 或 LINE 聯絡資訊"></div>
+    <div class="field"><label for="experience">跑步經驗</label><input id="experience" name="experience" maxlength="100" placeholder="例如：5K、10K、半馬、全馬（選填）"></div>
+    <div class="field"><label for="note">其他備註</label><textarea id="note" name="note" maxlength="500" placeholder="任何希望主辦單位知道的事情（選填）"></textarea></div>
+    <button class="btn red" type="submit" style="width:100%">SUBMIT REGISTRATION ↗</button>
+    <div class="form-note">送出後，你的姓名會顯示於本裝置的報名名單。聯絡方式及備註不會公開顯示。此展示版不會將資料上傳至雲端。</div>
+    <div class="success" id="successMsg" role="status"></div>
+   </form>
+  </div>
+ </div>
+</section>
+
+<section class="section" id="entries" style="background:#e9e3d7">
+ <div class="wrap">
+  <div class="section-kicker">04 / ENTRY LIST</div>
+  <h2 class="section-title">參賽名單</h2>
+  <p class="lead">已完成個人報名的選手將列於下方。主辦單位完成分隊後，正式隊伍及棒次將公布於此。</p>
+  <div class="register-grid" style="margin-top:36px">
+   <div class="list-card">
+    <div class="entries-head"><div><h3>個人報名名單</h3><p class="sub" style="margin:5px 0 0">REGISTERED RUNNERS</p></div><span class="pill" id="runnerCount">0 RUNNERS</span></div>
+    <ul class="runner-list" id="runnerList"><li class="empty">目前還沒有報名選手。<br>期待你成為第一位加入的人！</li></ul>
+   </div>
+   <div class="list-card">
+    <div class="entries-head"><div><h3>正式參賽隊伍</h3><p class="sub" style="margin:5px 0 0">OFFICIAL TEAMS · 5 RUNNERS / TEAM</p></div><span class="pill" id="teamCount">0 TEAMS</span></div>
+    <div id="teamList" class="empty">隊伍將由主辦單位統一安排，<br>完成分隊後公布。</div>
+   </div>
+  </div>
+
+  <details class="admin">
+   <summary>主辦人分隊工具（本機展示功能）</summary>
+   <div class="admin-panel">
+    <p class="sub">勾選五位已報名選手並建立隊伍。此工具僅在目前瀏覽器儲存資料，沒有登入保護，也不會同步給其他人；請勿在公開共用裝置輸入真實個資。</p>
+    <label for="teamName" style="font-size:12px;font-weight:700">隊伍名稱</label>
+    <input id="teamName" maxlength="40" placeholder="輸入隊名，例如：山岳疾走隊">
+    <div id="assignList" class="selected-list"><span class="sub">尚無可分隊選手</span></div>
+    <div class="admin-actions"><button class="btn" id="makeTeam" type="button">建立隊伍（需選 5 人）</button><button class="btn outline" id="exportCsv" type="button">匯出報名名單 CSV</button></div>
+    <button class="btn outline" id="clearData" type="button" style="margin-top:12px;width:100%">清除本機展示資料</button>
+   </div>
+  </details>
+ </div>
+</section>
+
+<section class="section" id="faq">
+ <div class="wrap">
+  <div class="section-kicker">05 / RACE INFORMATION</div>
+  <h2 class="section-title">賽事資訊</h2>
+  <div class="faq">
+   <details><summary>需要先組好隊伍才能報名嗎？</summary><p>不用。請先完成個人報名，主辦單位將統一安排每隊五位選手。</p></details>
+   <details><summary>可以自行選擇跑哪一棒嗎？</summary><p>第一版由主辦單位統一安排棒次，報名時不需要選擇棒次。</p></details>
+   <details><summary>報名有截止日期或人數上限嗎？</summary><p>目前沒有設定報名截止日期及人數上限，依每五人編成一隊。</p></details>
+   <details><summary>報名後會公開哪些資料？</summary><p>公開名單僅顯示選手姓名；聯絡方式、跑步經驗及備註不會公開。</p></details>
+   <details><summary>活動路線會有變動嗎？</summary><p>目前路線為規劃版本，實際交接點、道路通行及安全安排請以主辦單位最後公告為準。</p></details>
+   <details><summary>這個網站的報名資料會同步給所有人嗎？</summary><p>目前是本機展示版，資料只存在填寫者目前使用的瀏覽器。若要正式開放親友跨裝置報名及同步名單，需要再串接雲端資料庫。</p></details>
+  </div>
+ </div>
+</section>
+</main>
+<footer class="footer">
+ <div class="footer-logo">TAIPEI EKIDEN</div>
+ <p>第一回・往路<br>2027.01.02｜台視 → 貓空</p>
+ <small>SAME ROAD · DIFFERENT STEPS · A HIGHER TOMORROW.</small>
+</footer>
+<div class="toast" id="toast"></div>
+<script>
+const STORE_KEY='taipei-ekiden-demo-v1';
+const TEAM_KEY='taipei-ekiden-teams-v1';
+let runners=JSON.parse(localStorage.getItem(STORE_KEY)||'[]');
+let teams=JSON.parse(localStorage.getItem(TEAM_KEY)||'[]');
+const $=id=>document.getElementById(id);
+function save(){localStorage.setItem(STORE_KEY,JSON.stringify(runners));localStorage.setItem(TEAM_KEY,JSON.stringify(teams));render();}
+function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function toast(msg){const t=$('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2600);}
+function render(){
+ $('runnerCount').textContent=`${runners.length} RUNNERS`;
+ $('teamCount').textContent=`${teams.length} TEAMS`;
+ const assigned=new Set(teams.flatMap(t=>t.ids));
+ const visible=runners;
+ $('runnerList').innerHTML=visible.length?visible.map((r,i)=>`<li><span><b>${String(i+1).padStart(2,'0')}</b>　${esc(r.name)}</span><small>${assigned.has(r.id)?'已分隊':'待分隊'}</small></li>`).join(''):'<li class="empty">目前還沒有報名選手。<br>期待你成為第一位加入的人！</li>';
+ $('teamList').innerHTML=teams.length?teams.map((t,i)=>`<div class="team-card"><div class="team-top"><span class="team-name">TEAM ${String(i+1).padStart(2,'0')}｜${esc(t.name)}</span><span class="pill">5 RUNNERS</span></div><div class="team-members">${t.ids.map((id,j)=>{const r=runners.find(x=>x.id===id);return `<div class="member"><b>STAGE 0${j+1}</b><span>${r?esc(r.name):'選手資料不存在'}</span></div>`}).join('')}</div></div>`).join(''):'<div class="empty">隊伍將由主辦單位統一安排，<br>完成分隊後公布。</div>';
+ const unassigned=runners.filter(r=>!assigned.has(r.id));
+ $('assignList').innerHTML=unassigned.length?unassigned.map(r=>`<label class="checkrow"><input type="checkbox" value="${r.id}"><span>${esc(r.name)}</span></label>`).join(''):'<span class="sub">目前沒有待分隊選手（需有五位未分隊選手才能建立新隊伍）。</span>';
+}
+$('signupForm').addEventListener('submit',e=>{
+ e.preventDefault();const fd=new FormData(e.target);
+ const name=fd.get('name').trim(),contact=fd.get('contact').trim();
+ if(!name||!contact)return;
+ if(runners.some(r=>r.name===name&&r.contact===contact)){toast('這筆報名資料似乎已存在，請確認姓名與聯絡方式。');return;}
+ runners.push({id:(crypto.randomUUID?crypto.randomUUID():String(Date.now()+Math.random())),name,nickname:fd.get('nickname').trim(),contact,experience:fd.get('experience').trim(),note:fd.get('note').trim(),createdAt:new Date().toISOString()});
+ save();e.target.reset();$('successMsg').style.display='block';$('successMsg').textContent='報名資料已加入此裝置的展示名單！提醒：資料尚未上傳雲端，其他裝置不會看到這筆報名。';toast('已新增個人報名');$('successMsg').scrollIntoView({behavior:'smooth',block:'nearest'});
+});
+$('makeTeam').addEventListener('click',()=>{
+ const ids=[...document.querySelectorAll('#assignList input:checked')].map(x=>x.value);
+ const name=$('teamName').value.trim();
+ if(!name){toast('請先輸入隊伍名稱');return;}
+ if(ids.length!==5){toast('請選擇剛好五位尚未分隊的選手');return;}
+ if(teams.some(t=>t.name===name)){toast('隊伍名稱已存在，請更換名稱');return;}
+ teams.push({name,ids});$('teamName').value='';save();toast('隊伍建立完成');document.querySelector('#entries').scrollIntoView({behavior:'smooth'});
+});
+$('exportCsv').addEventListener('click',()=>{
+ const rows=[['姓名','暱稱','聯絡方式','跑步經驗','備註','報名時間','隊伍']];
+ const teamById={};teams.forEach(t=>t.ids.forEach((id,i)=>teamById[id]=`${t.name}（第${i+1}棒）`));
+ runners.forEach(r=>rows.push([r.name,r.nickname,r.contact,r.experience,r.note,r.createdAt,teamById[r.id]||'待分隊']));
+ const csv='\\uFEFF'+rows.map(row=>row.map(v=>'"'+String(v??'').replace(/"/g,'""')+'"').join(',')).join('\\r\\n');
+ const blob=new Blob([csv],{type:'text/csv;charset=utf-8;'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='taipei-ekiden-runners.csv';a.click();URL.revokeObjectURL(a.href);
+});
+$('clearData').addEventListener('click',()=>{if(confirm('確定清除目前瀏覽器中的所有報名與分隊資料？此動作無法復原。')){runners=[];teams=[];save();toast('本機展示資料已清除');}});
+$('menuBtn').addEventListener('click',()=>$('nav').classList.toggle('open'));
+document.querySelectorAll('.nav a').forEach(a=>a.addEventListener('click',()=>$('nav').classList.remove('open')));
+render();
+</script>
+</body>
+</html>
